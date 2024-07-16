@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>       
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Buen Clima - Obtené el pronostico en tiempo real</title>
+</head>
+<body>
+    <div class="divGeneral">
+        <div class="divGeneralIzq">
+            <img class="logo" src="./assets/logo.png" alt="">
+            <h5 class="intro">
+                En Buen clima vamos a brindarte
+                <br>
+                toda la info en tiempo real.
+            </h5>
+            <form class="formulario">
+                <label class="labelNombre" for="buscadorId">Nombre de la ciudad:</label>
+                </br>
+                <input class="buscador" id="buscadorId" type="text"> 
+                </br>
+                <button id="botoncitoId" type="button" class="boton">Buscar</button>
+            </form>
+        </div>
+        <div class="divGeneralDer">
+            <div id="contenidoCard" class="conteoculto">
+            <img class="img-pronostico" id="imgPronostico" src="" alt="">              
+            <h4 id="ciudad"></h4>
+            <h4 id="region"></h4>
+            <h4 id="pais"></h4>
+            <h4 id="latitud"></h4>
+            <h4 id="longitud"></h4>
+            <h4 id="humedad"></h4>
+            <h4 id="condicion"></h4>
+            <h4 id="temperatura"></h4>
+            <h4 id="horayfecha"></h4>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
