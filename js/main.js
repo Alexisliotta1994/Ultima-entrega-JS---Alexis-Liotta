@@ -17,11 +17,11 @@ let contenidoCard = document.getElementById("contenidoCard")
 boton.addEventListener("click", (e)  => {  
  let busqueda = buscador.value
  console.log(busqueda)
- fetch(`http://api.weatherapi.com/v1/current.json?key=e8b7d794439744b6a5700937241307&q=${busqueda}`)
+ fetch(`https://api.weatherapi.com/v1/current.json?key=e8b7d794439744b6a5700937241307&q=${busqueda}`)
 
   .then(response => response.json())
   .then(data =>{
-    imagen.src = `http://${data.current.condition.icon}`
+    imagen.src = `https://${data.current.condition.icon}`
     ciudad.innerText = `Ciudad: ${data.location.name}`
     region.innerText = `Region: ${data.location.region}`
     pais.innerText   = `Pais: ${data.location.country}`
